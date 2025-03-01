@@ -127,3 +127,4 @@ let search = document.querySelector(".search");
 search.onclick = function() {
   document.querySelector(".searchbar").classList.toggle("active");
 }
+
