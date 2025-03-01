@@ -141,50 +141,8 @@
                 </div>
             </div>
     <!-- movies sections -->
-    <main>
-        <section class="section" id="now-playing">
-          <h2>Now Playing Movies</h2>
-          <div class="movie-grid" id="nowPlayingGrid"></div>
-          <button class="load-more-btn" onclick="loadMore('nowPlaying')">Load More</button>
-        </section>
-        <section class="section" id="coming-soon">
-          <h2>Coming Soon Movies</h2>
-          <div class="movie-grid" id="comingSoonGrid"></div>
-          <button class="load-more-btn" onclick="loadMore('comingSoon')">Load More</button>
-        </section>
-        <section class="section" id="tv-shows">
-          <h2>Popular TV Shows</h2>
-          <div class="movie-grid" id="tvShowsGrid"></div>
-          <button class="load-more-btn" onclick="loadMore('tvShows')">Load More</button>
-        </section>
-        <section class="section" id="anime">
-          <h2>Top Anime & Animation</h2>
-          <div class="movie-grid" id="animeGrid"></div>
-          <button class="load-more-btn" onclick="loadMore('anime')">Load More</button>
-          <p id="animeFallback" style="text-align:center; margin-top:1em; display:none;">
-            No anime found. Please check again later.
-          </p>
-        </section>
-        <section class="section" id="reviews">
-          <h2>Reviews</h2>
-          <div class="review-list" id="reviewList"></div>
-          <div style="text-align:center; margin-top:1em;">
-            <button class="btn" onclick="openReviewModal()">Add Review</button>
-          </div>
-        </section>
-        <section class="section" id="profile">
-          <h2>Your Profile</h2>
-          <div class="profile-info" id="profileInfo">
-            <p id="profileMessage">Please log in to view your profile.</p>
-          </div>
-        </section>
-        <section class="section" id="booking">
-          <h2>Book Your Tickets</h2>
-          <div style="text-align:center;">
-            <button class="btn" onclick="openBookingModal()">Book Now</button>
-          </div>
-        </section>
-      </main>
+    <div class="movies-cont container" id="movies-cont">
+    </div>
     <!-- movies sections end -->
 </body>
 </html>
