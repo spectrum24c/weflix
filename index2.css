@@ -1,7 +1,7 @@
 /* css slider */
 .slider{
     height: 100vh;
-    margin-top: -100px;
+    margin-top: -89px;
     position: relative;
 }
 .slider .list .item{
@@ -156,12 +156,15 @@
         overflow: auto;
         justify-content: start;
     }
+    #movies-cont{
+        margin-top: -30px;
+    }
 }
 
 /* New styles for .movies-cont and #movies-cont */
 
 #movies-cont{
-  
+    background: #000;
     overflow-x: auto;
     padding: 20px;
     box-sizing: border-box;
