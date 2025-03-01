@@ -29,7 +29,7 @@ header {
   transition: all ease 600ms;
 }
 header.black-bg {
-  background-color: rgb(20, 20, 20);
+  background-color: rgba(20, 20, 20,0.9);
   height: 70px;
 }
 .header-cont {
