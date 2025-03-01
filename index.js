@@ -125,6 +125,6 @@ window.addEventListener('load',function() {
 let search = document.querySelector(".search"); 
 
 search.onclick = function() {
-  document.querySelector(".searchbar").classList.toggle("active");
+  document.querySelector(".search-container").classList.toggle("active");
 }
 

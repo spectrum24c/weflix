@@ -142,6 +142,7 @@
         height: 120%;
         object-fit: contain;
         margin-top: -170px;
+        position: sticky;
     }
     .thumbnail{
         position: absolute;
@@ -157,8 +158,14 @@
         justify-content: start;
     }
     #movies-cont{
-        margin-top: -35px;
+        margin-top: -59px;
     }
+    .search-container input {
+        width: 150px;
+      }
+      .search-container.active {
+        width: 150px;
+      }
 }
 
 /* New styles for .movies-cont and #movies-cont */
