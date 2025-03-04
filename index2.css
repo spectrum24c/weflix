@@ -161,7 +161,9 @@
         margin-top: -39px;
     }
     .search-container input {
-        width: 150px;
+        width: 90px;
+        top: -32.9px;
+        left: 35px;
       }
       .search-container.active {
         width: 150px;
