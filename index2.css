@@ -146,7 +146,7 @@
     }
     .thumbnail{
         position: absolute;
-        bottom: -10px;
+        bottom: -40px;
         z-index: 11;
         display: flex;
         gap: 10px;
