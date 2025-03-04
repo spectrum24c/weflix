@@ -226,3 +226,15 @@ async function fetchMovies(endpoint, page=1) {
       console.error("Modal open error:", e);
     }
   }
+
+  async function searchMovies(query) {
+    try {
+      const url = `${TMDB_BASE_URL}/search/movie?api_key=${TMDB_API_KEY}&language=en-US&query=${encodeURIComponent(query)}`;
+      const res = await fetch(url);
+      const data = await res.json();
+      return data.results || [];
+    } catch(e) {
+      console.error("Search error:", e);
+      return [];
+    }
+  }
