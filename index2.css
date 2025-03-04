@@ -130,6 +130,10 @@
     inset: auto 10px 10px 10px;
 }
 @media screen and (max-width: 678px) {
+    #smile{
+        position: relative;
+        left: -7px;
+    }
     .thumbnail{
         justify-content: start;
     }
