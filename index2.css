@@ -132,7 +132,7 @@
 @media screen and (max-width: 678px) {
     #smile{
         position: relative;
-        left: -7px;
+        left: 18px;
     }
     .thumbnail{
         justify-content: start;
@@ -176,12 +176,13 @@
         margin-top: -39px;
     }
     .search-container input {
-        width: 150px;
+        width: 90px;
         top: -33px;
         left: 39px;
       }
-      .search-container.active {
+      .search-container{
         width: 150px;
+        left: 19px;
       }
 }
 
