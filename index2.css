@@ -148,7 +148,7 @@
         width: 100%;
         height: 120%;
         object-fit: contain;
-        margin-top: -170px;
+        margin-top: -166px;
         position: sticky;
     }
     .slider .list .item .content{
@@ -177,7 +177,7 @@
     }
     .search-container input {
         width: 150px;
-        top: -23.9px;
+        top: -33px;
         left: 39px;
       }
       .search-container.active {
