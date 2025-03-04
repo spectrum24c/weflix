@@ -146,7 +146,7 @@
     }
     .thumbnail{
         position: absolute;
-        bottom: -40px;
+        bottom: -10px;
         z-index: 11;
         display: flex;
         gap: 10px;
@@ -158,12 +158,12 @@
         justify-content: start;
     }
     #movies-cont{
-        margin-top: -39px;
+        margin-top: -79px;
     }
     .search-container input {
-        width: 90px;
-        top: -32.9px;
-        left: 35px;
+        width: 94px;
+        top: -33.9px;
+        left: 39px;
       }
       .search-container.active {
         width: 150px;
