@@ -1,4 +1,4 @@
-const tmdbApiKey = "4626200399b08f9d04b72348e3625f15"; // Replace with your TMDb API key
+const tmdbApiKey = "e950e51d5d49e85f7c2f17f01eb23ba3"; // Replace with your TMDb API key
 const jikanApiEndpoint = "https://api.jikan.moe/v4";
 const tmdbApiEndpoint = "https://api.themoviedb.org/3";
 const imgPath = "https://image.tmdb.org/t/p/original"; // Use the original image size for better quality
@@ -176,12 +176,18 @@ window.addEventListener('load', function () {
 // Search functionality
 document.getElementById('movieSearch').addEventListener('input', function (event) {
     const query = event.target.value;
+    const moviesCont = document.getElementById('movies-cont');
+    const searchResultsCont = document.getElementById('search-results-cont');
+
     if (query.length > 2) { // Start searching after 3 characters
         searchMovies(query);
+        moviesCont.classList.add('blur');
+        searchResultsCont.style.display = 'block';
     } else {
         // Clear search results and reset to normal when input is empty
-        const moviesCont = document.getElementById('movies-cont');
-        moviesCont.innerHTML = '';
+        searchResultsCont.innerHTML = '';
+        searchResultsCont.style.display = 'none';
+        moviesCont.classList.remove('blur');
         fetchTrendingMovies();
         fetchAndBuildAllSections();
         fetchPopularContent();
@@ -206,8 +212,8 @@ function searchMovies(query) {
 }
 
 function displayResults(movies) {
-    const moviesCont = document.getElementById('movies-cont');
-    moviesCont.innerHTML = ''; // Clear previous results
+    const searchResultsCont = document.getElementById('search-results-cont');
+    searchResultsCont.innerHTML = ''; // Clear previous results
 
     const moviesListHTML = movies.map(movie => {
         const posterPath = movie.poster_path ? `${imgPath}${movie.poster_path}` : movie.images?.jpg?.image_url;
@@ -228,10 +234,5 @@ function displayResults(movies) {
         </div>
     `;
 
-    const div = document.createElement('div');
-    div.className = "movies-section";
-    div.innerHTML = resultsSectionHTML;
-
-    // append html into movies container
-    moviesCont.append(div);
+    searchResultsCont.innerHTML = resultsSectionHTML;
 }
